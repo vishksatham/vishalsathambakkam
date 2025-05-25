@@ -51,3 +51,112 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+html, body {
+    margin: 0;
+  height: 100%;
+  background: radial-gradient(ellipse at center, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+  }
+  
+  #stars {
+    width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow:
+    50px 100px #FFF, 150px 300px #FFF, 250px 500px #FFF, 350px 700px #FFF,
+    450px 900px #FFF, 550px 1100px #FFF, 650px 1300px #FFF, 750px 1500px #FFF,
+    850px 1700px #FFF, 950px 1900px #FFF, 1050px 100px #FFF, 1150px 300px #FFF,
+    1250px 500px #FFF, 1350px 700px #FFF, 1450px 900px #FFF, 1550px 1100px #FFF,
+    1650px 1300px #FFF, 1750px 1500px #FFF, 1850px 1700px #FFF, 1950px 1900px #FFF;
+  animation: animStar 40s linear infinite;
+  }
+  
+  #stars::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: inherit;
+  }
+  
+  /* Layer 2: Medium & Medium-Speed Stars */
+  #stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow:
+        100px 600px #FFF, 300px 800px #FFF, 500px 1000px #FFF, 700px 1200px #FFF,
+        900px 1400px #FFF, 1100px 1600px #FFF, 1300px 1800px #FFF, 1500px 200px #FFF,
+        1700px 400px #FFF, 1900px 600px #FFF;
+    animation: animStar 80s ease-in-out infinite;
+  }
+  
+  #stars2::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: inherit;
+  }
+  
+  /* Layer 3: Large & Slow Stars */
+  #stars3 {
+    width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow:
+    150px 900px #FFF, 400px 1100px #FFF, 700px 1300px #FFF, 1000px 1500px #FFF,
+    1300px 1700px #FFF, 1600px 300px #FFF;
+  animation: animStar 120s ease-in-out infinite;
+  }
+  
+  #stars3::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: inherit;
+  }
+  
+  /* NEW Layer 4: Extra Small & Ultra Fast */
+  #stars4 {
+    width: 0.5px;
+    height: 0.5px;
+    background: transparent;
+    box-shadow:
+      50px 300px #FFF, 250px 350px #FFF, 450px 500px #FFF, 650px 650px #FFF,
+      850px 750px #FFF, 1050px 850px #FFF, 1250px 950px #FFF;
+    animation: animStar 25s linear infinite;
+  }
+  
+  #stars4::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    width: 0.5px;
+    height: 0.5px;
+    background: transparent;
+    box-shadow: inherit;
+  }
+  
+  @keyframes animStar {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-2000px); }
+  }
+
+
+  @keyframes fall {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }

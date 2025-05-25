@@ -1,10 +1,12 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I'm Vishal Sathambakkam, a software developer passionate about building performant systems and beautiful web applications.
+
+Here's what I'm working on and what drives me every day.
 
 You can find the source code for the Jekyll new theme at:
 {% include icon-github.html username="jekyll" %} /

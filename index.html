@@ -4,20 +4,76 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Vishalllllllllllll</h1>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div id="title">
+      <span>PURE CSS</span><br/>
+      <span>PARALLAX PIXEL STARS</span>
+    </div>
+    <img class="profile-img" src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Vishal Sathambakkam" />
+    <h1>Hello, I'm <strong>Vishal Sathambakkam</strong></h1>
+    <p>A developer passionate about building intelligent systems, elegant web experiences, and AI tools.</p>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <!-- About Me -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science student at the University of Washington and a software engineer with hands-on experience in full-stack web development, generative AI, and scalable backend systems.
+    </p>
+    <a href="{{ site.baseurl }}/about/" class="btn">Read More →</a>
+  </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- Experience Section -->
+  <section class="experience">
+    <h2>Experience</h2>
+    <ul>
+      {% for role in site.data.experience %}
+        <li>
+          <h3>{{ role.title }} @ {{ role.company }}</h3>
+          <small>{{ role.location }} — {{ role.dates }}</small>
+          <p>{{ role.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- Project Preview -->
+  <section class="projects">
+    <h2>Featured Projects</h2>
+    <div>eqwwwwwwwwwwwwwww
+
+      eqwwwwwwwwwwwwwwwwq
+
+      eqwwwwwwwwwwwwwwwwqe
+      ewq
+
+      wqe
+      q
+      we
+      <q>
+        wqewq
+        <em>wqewq
+          qwee
+          wqeewqwe
+        </em>
+
+
+        eqwwwwwwwwwwwwwwwew
+        wqeewqweewq
+      </q>
+
+      ewqewqwqeqw
+    </div>
+    <ul>
+      {% for project in site.data.projects limit:2 %}
+        <li>
+          <strong><a href="{{ project.url }}">{{ project.name }}</a></strong><br />
+          <span>{{ project.description }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <a href="{{ site.baseurl }}/projects/" class="btn">See All Projects →</a>
+  </section>
 
 </div>
