@@ -6,44 +6,11 @@
 
   <body>
 
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-    <div id="stars4"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
 
     {% include header.html %}
-
-    <script>
-      const numStars = 1000;
-    
-      function createStar() {
-        const star = document.createElement("div");
-        const size = Math.random() * 2 + 0.5; // 0.5px to 2.5px
-        const duration = Math.random() * 50 + 10; // 10s to 60s
-    
-        Object.assign(star.style, {
-          position: "fixed",
-          top: `${Math.random() * 100}%`,
-          left: `${Math.random() * 100}%`,
-          width: `${size}px`,
-          height: `${size}px`,
-          background: "white",
-          borderRadius: "50%",
-          opacity: Math.random().toFixed(2),
-          animation: `fall ${duration}s linear infinite`,
-          zIndex: "-1",
-          pointerEvents: "none",
-          boxShadow: `0 0 ${Math.random() * 2}px white`,
-          filter: `blur(${Math.random() * 1.5}px)`
-        });
-    
-        document.body.appendChild(star);
-      }
-    
-      for (let i = 0; i < numStars; i++) {
-        createStar();
-      }
-    </script>
 
     <div class="page-content">
       <div class="wrapper">
