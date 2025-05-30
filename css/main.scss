@@ -67,7 +67,7 @@ body {
   50% { background-position: 100% 100%; }
   100% { background-position: 0% 0%; }
 }
-  
+
 .wave {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 1000% 1000% 0 0;
@@ -100,4 +100,81 @@ body {
   50%  { transform: translateX(-50%); }
   75%  { transform: translateX(-25%); }
   100% { transform: translateX(1); }
+}
+
+.typed-text {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #ffffff;
+  animation: blink 0.7s infinite;
+}
+
+.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  49%  { opacity: 1; }
+  50%  { opacity: 0; }
+  99%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 200px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.floating-img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;         
+  justify-content: space-between;
+  padding: 4rem 2rem;          
+  height: auto;                
+  min-height: 60vh;            
+  gap: 2rem;                   
+}
+
+.hero img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.hero-text h1 {
+  font-size: 1.8rem;
+  color: white;
+  line-height: 1.5;
 }
