@@ -64,7 +64,7 @@ layout: default
         <p>
           Relevant coursework: 
           Computer Communication Networks, Computer Security, Data Visualization, Human-Computer Interface,
-          Hardware/Software Interface, Systems programming, Data Structures & Parallelism, Database Management,
+          Hardware/Software Interface, Systems Programming, Data Structures & Parallelism, Database Management,
           Software Design & Implementation, Discrete Mathematics/Statistics
         </p>
       </div>
@@ -82,18 +82,57 @@ layout: default
   </section>
 
   <!-- Experience Section -->
-  <section class="experience">
-    <h2>Experience</h2>
-    <ul>
-      {% for role in site.data.experience %}
-        <li>
-          <h3>{{ role.title }} @ {{ role.company }}</h3>
-          <small>{{ role.location }} — {{ role.dates }}</small>
-          <p>{{ role.description }}</p>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
+<section class="experience">
+  <h1>Experience</h1>
+  <div class="bubble-chain">
+    <div class="bubble-item">
+      
+      <!-- Company + Title Block -->
+      <div class="experience-header">
+        <a href="https://neweic.com" target="_blank">
+          <img src="{{ site.baseurl }}/assets/images/new_eic_logo.jpg" alt="NEW EIC Logo" class="company-logo">
+        </a>
+        <div class="title-details">
+          <h3>NEW EIC - Boston, MA</h3>
+          <p>Software Engineer Intern (Nov 2024 – Feb 2025)</p>
+        </div>
+      </div>
+
+      <!-- Role Description -->
+      <div class="centered-text">
+        <p>Key Involvement:</p>
+        <p>&nbsp;</p>
+      </div>
+
+      <ul class="experience-bullets">
+        <li>Utilized the MERN stack to design and develop robust, user-friendly web dashboard features.</li>
+        <p>&nbsp;</p>
+
+        <li>Implemented dynamic front-end features using React, integrated with back-end APIs built with Node.js/Express.js.</li>
+        <p>&nbsp;</p>
+
+        <li>Containerized using Docker to streamline development, deployment, and ensure consistency across environments.</li>
+        <p>&nbsp;</p>
+
+        <li>Worked closely with fellow interns to optimize code performance and reliability.</li>
+      </ul>
+
+      <!-- Architecture -->
+      <div class="section-label centered-text">
+        <p>Technical Architecture:</p> 
+        <p>&nbsp;</p>
+
+        <li>Client-side: React + TypeScript</li>
+        <p>&nbsp;</p>
+        <li>Server-side: Node.js + Express + MongoDB</li>
+        <p>&nbsp;</p>
+
+        <li>Database Layer: MongoDB</li>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- Project Preview -->
   <section class="projects">
