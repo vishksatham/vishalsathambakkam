@@ -4,6 +4,16 @@
 
   <body>
 
+    <nav id="scroll-navbar" class="scroll-navbar hidden">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+
     <div class="wave"></div>
     <div class="wave"></div>
     <div class="wave"></div>
@@ -60,5 +70,23 @@
       });
       </script>
 
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("scroll-navbar");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > 100) {
+        navbar.classList.remove("hidden");
+      } else {
+        navbar.classList.add("hidden");
+      }
+
+      lastScrollTop = scrollTop;
+    });
+  });
+  </script>
   </body>
 </html>

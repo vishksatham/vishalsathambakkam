@@ -1,8 +1,3 @@
----
-layout: page
-title: About Me
-permalink: /about/
----
 
 Hi, I'm Vishal Sathambakkam, a software developer passionate about building performant systems and beautiful web applications.
 
