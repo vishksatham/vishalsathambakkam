@@ -1,0 +1,11 @@
+- name: AI Study Assistant
+  description: Flask-based RAG app that uses vector search and LLMs to answer student questions.
+  url: https://github.com/vishksatham/ai-study-assistant
+
+- name: Mininet Lab (CSE461)
+  description: Simulated TCP/UDP congestion control with custom router topology.
+  url: https://github.com/vishksatham/mininet-lab
+
+- name: EV Charger Visualizer
+  description: Interactive D3.js map for California EV charger data.
+  url: https://github.com/vishksatham/ev-charger-map

@@ -88,5 +88,36 @@
     });
   });
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-track");
+    const items = document.querySelectorAll(".carousel-item");
+    const leftBtn = document.querySelector(".carousel-btn.left");
+    const rightBtn = document.querySelector(".carousel-btn.right");
+
+    let index = 0;
+
+    function updateCarousel() {
+      const offset = index * -100;
+      track.style.transform = `translateX(${offset}%)`;
+    }
+
+    leftBtn.addEventListener("click", () => {
+      index = (index - 1 + items.length) % items.length;
+      updateCarousel();
+    });
+
+    rightBtn.addEventListener("click", () => {
+      index = (index + 1) % items.length;
+      updateCarousel();
+    });
+
+    // Optional: Auto-scroll
+    setInterval(() => {
+      index = (index + 1) % items.length;
+      updateCarousel();
+    }, 5000);
+  });
+</script>
   </body>
 </html>

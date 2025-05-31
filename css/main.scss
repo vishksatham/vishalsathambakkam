@@ -14,7 +14,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #fcfcfc;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -396,4 +396,72 @@ body {
   p {
     margin: 0;
   }
+}
+
+.carousel-item {
+  width: 80%; /* or 100% for full width */
+  flex-shrink: 0;
+  background: black;
+  color: white;
+
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+  max-height: 250px;         /* Optional height cap */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 300px; /* fixed width per item */
+  margin: 1rem;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+
+  /* Ensures horizontal layout */
+  width: max-content;
+}
+
+.carousel-container {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.carousel-btn.left {
+  position: absolute;
+  left: 0;
+}
+
+.carousel-btn.right {
+  position: absolute;
+  right: 0;
 }
