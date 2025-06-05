@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Vishal Sathambakkam's Personal Site
+title:
 email: vishksatham@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
     Personal portfolio of Vishal Sathambakkam — a passionate software engineer and computer science student at the University of Washington. Exploring projects in full-stack development, generative AI, and scalable backend systems.
