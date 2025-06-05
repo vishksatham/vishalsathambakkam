@@ -98,8 +98,9 @@
     let index = 0;
 
     function updateCarousel() {
-      const offset = index * -100;
-      track.style.transform = `translateX(${offset}%)`;
+      const itemWidth = items[0].offsetWidth + 32; // 600px width + ~32px margin
+      const offset = index * -itemWidth;
+      track.style.transform = `translateX(${offset}px)`;
     }
 
     leftBtn.addEventListener("click", () => {
@@ -112,11 +113,6 @@
       updateCarousel();
     });
 
-    // Optional: Auto-scroll
-    setInterval(() => {
-      index = (index + 1) % items.length;
-      updateCarousel();
-    }, 5000);
   });
 </script>
   </body>

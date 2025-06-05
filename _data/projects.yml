@@ -2,10 +2,15 @@
   description: Flask-based RAG app that uses vector search and LLMs to answer student questions.
   url: https://github.com/vishksatham/ai-study-assistant
 
-- name: Mininet Lab (CSE461)
+- name: Multithreaded HTTP Server
+  description: HTTP server with full-text search capabilities and IPv4/IPv6 support, similar to Google's search bar
+
+- name: Custom Socket-API Protocol
   description: Simulated TCP/UDP congestion control with custom router topology.
   url: https://github.com/vishksatham/mininet-lab
 
-- name: EV Charger Visualizer
-  description: Interactive D3.js map for California EV charger data.
+- name: Flights Database Application
+  description: Relational DB flights booking application for itinerary booking and route optimization
   url: https://github.com/vishksatham/ev-charger-map
+
+

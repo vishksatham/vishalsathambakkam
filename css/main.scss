@@ -399,22 +399,21 @@ body {
 }
 
 .carousel-item {
-  width: 80%; /* or 100% for full width */
   flex-shrink: 0;
   background: black;
   color: white;
 
   padding: 1rem 1.5rem;
   margin: 1rem auto;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
-  max-height: 250px;         /* Optional height cap */
+  max-height: 400px;         /* Optional height cap */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  width: 300px; /* fixed width per item */
+  width: 510px; /* fixed width per item */
   margin: 1rem;
 }
 
@@ -429,7 +428,7 @@ body {
 
 .carousel-container {
   overflow: hidden;
-  max-width: 1000px;
+  width: 600px;   /* Match carousel-item width */
   margin: 0 auto;
 }
 
@@ -449,7 +448,7 @@ body {
   padding: 0.5rem 1rem;
   z-index: 10;
   border-radius: 5px;
-  transition: background 0.2s ease;
+  transition: background 0.5s ease;
 }
 
 .carousel-btn:hover {
